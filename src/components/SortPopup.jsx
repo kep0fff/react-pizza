@@ -20,15 +20,15 @@ function SortPopup() {
 						fill='#2C2C2C'
 					/>
 				</svg>
-				<b>Сортировка по:</b>
-				<span onClick={toggleVisiblePopup}>популярности</span>
+				<b>сортування за:</b>
+				<span onClick={toggleVisiblePopup}>популярності</span>
 			</div>
 			{visiblePopup && (
 				<div className='sort__popup'>
 					<ul>
-						<li className='active'>популярности</li>
-						<li>цене</li>
-						<li>алфавиту</li>
+						<li className='active'>популярності</li>
+						<li>ціні</li>
+						<li>алфавіту</li>
 					</ul>
 				</div>
 			)}
