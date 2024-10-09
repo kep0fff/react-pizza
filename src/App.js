@@ -11,7 +11,7 @@ function App() {
 							onClickItem={name => console.log(name)}
 							items={["М'ясні", 'Вегетаріанська', 'Гриль', 'Гострі', 'Закриті']}
 						/>
-						<SortPopup />
+						<SortPopup itemsPopup={['популярністю', 'ціною', 'алфавітом']} />
 					</div>
 					<h2 className='content__title'>Всі піци</h2>
 					<div className='content__items'>
