@@ -1,0 +1,104 @@
+{
+	"pizzas": [
+		{
+			"id": 0,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/04/36.picza-peperoni-z-perczem-825x825.jpg",
+			"name": "Пепероні Фреш з перцем",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 203,
+			"category": 0,
+			"rating": 4
+		},
+		{
+			"id": 1,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/04/09.picza-chotiri-siri-1-825x825.jpg",
+			"name": "Сирна",
+			"types": [0],
+			"sizes": [26, 40],
+			"price": 145,
+			"category": 1,
+			"rating": 6
+		},
+		{
+			"id": 2,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/10/03.picza-selyanska-1-825x825.jpg",
+			"name": "Селянська",
+			"types": [0],
+			"sizes": [26, 40],
+			"price": 195,
+			"category": 1,
+			"rating": 4
+		},
+		{
+			"id": 3,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/11/04.picza-milanska-825x825.jpg",
+			"name": "Міланська",
+			"types": [1],
+			"sizes": [26, 30, 40],
+			"price": 275,
+			"category": 2,
+			"rating": 2
+		},
+		{
+			"id": 4,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/04/16.picza-vega-825x825.jpg",
+			"name": "Vega",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 215,
+			"category": 3,
+			"rating": 8
+		},
+		{
+			"id": 5,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/11/07.picza-vitello-2-825x825.jpg",
+			"name": "Vitello (з телятиною)",
+			"types": [0],
+			"sizes": [30, 40],
+			"price": 210,
+			"category": 2,
+			"rating": 2
+		},
+		{
+			"id": 6,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2020/10/37.picza-peperoni-klasik-825x825.jpg",
+			"name": "Пепероні(гостра)",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 175,
+			"category": 1,
+			"rating": 9
+		},
+		{
+			"id": 7,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/04/21.picza-margarita-825x825.jpg",
+			"name": "Маргарита",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 150,
+			"category": 4,
+			"rating": 10
+		},
+		{
+			"id": 8,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2015/04/08.picza-chotiri-sezoni-3-825x825.jpg",
+			"name": "Чотири сезони",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 195,
+			"category": 5,
+			"rating": 10
+		},
+		{
+			"id": 9,
+			"imageUrl": "https://vivapizza.com.ua/wp-content/uploads/2016/06/18.picza-kaprichoza-vershkova-825x825.jpg",
+			"name": "Капрічіоза Вершкова",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 185,
+			"category": 5,
+			"rating": 7
+		}
+	]
+}
