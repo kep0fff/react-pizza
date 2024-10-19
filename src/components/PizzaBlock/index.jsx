@@ -14,6 +14,7 @@ function PizzaBlock({ name = '---', imageUrl = '', price = 0, id, types = [], si
 	const onSelectSize = index => {
 		setActiveSize(index);
 	};
+
 	return (
 		<div>
 			<div className='pizza-block'>
