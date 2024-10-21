@@ -5,6 +5,7 @@ export const addPizzaToCart = pizzaObj => ({
 export const clearCart = () => ({
 	type: 'CLEAR_CART',
 });
-export const removeCartItem = () => ({
+export const removeCartItem = id => ({
 	type: 'REMOVE_CART_ITEM',
+	payload: id,
 });
