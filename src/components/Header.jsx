@@ -1,14 +1,18 @@
 import { Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
+import { createSelector } from 'reselect';
 
 import logoSvg from '../assets/img/pizza-logo.svg';
 import Button from './Button';
 
 function Header() {
-	const { totalPrice, totalCount } = useSelector(({ cart }) => ({
+	const cartSelector = state => state.cart;
+
+	const totalSelector = createSelector(cartSelector, cart => ({
 		totalPrice: cart.totalPrice,
 		totalCount: cart.totalCount,
 	}));
+	const { totalPrice, totalCount } = useSelector(totalSelector);
 	return (
 		<div className='header'>
 			<div className='container'>

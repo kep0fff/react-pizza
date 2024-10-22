@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { CartItem } from '../components';
-import { clearCart, removeCartItem } from '../redux/actions/cart';
+import { clearCart, removeCartItem, plusCartItem, minusCartItem, } from '../redux/actions/cart';
 import cartEmptyImage from '../assets/img/empty-cart.png';
 
 function Cart() {
@@ -17,10 +17,16 @@ function Cart() {
 			dispatch(clearCart());
 		}
 	};
-	const onRemoveItem = (id) => {
+	const onRemoveItem = id => {
 		if (window.confirm('Ви дійсно хочете видалити?')) {
 			dispatch(removeCartItem(id));
 		}
+	};
+	const onPlusItem = (id) => {
+		dispatch(plusCartItem(id));
+	};
+	const onMinusItem = id => {
+		dispatch(minusCartItem(id));
 	};
 	return (
 		<div className='content'>
@@ -109,6 +115,8 @@ function Cart() {
 									totalPrice={items[obj.id].totalPrice}
 									totalCount={items[obj.id].items.length}
 									onRemove={onRemoveItem}
+									onMinus = {onMinusItem}
+									onPlus = {onPlusItem}
 								/>
 							))}
 						</div>
@@ -149,7 +157,7 @@ function Cart() {
 				) : (
 					<div className='cart cart--empty'>
 						<h2>
-							Кошик порожній <icon>😕</icon>
+							Кошик порожній <span>😕</span>
 						</h2>
 						<p>
 							Найімовірніше, ви не замовляли ще піцу.
